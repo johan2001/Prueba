@@ -1,6 +1,8 @@
 #ifndef LIBRERIAS_H
 #define LIBRERIAS_H
 
+#define UNUSED(expr) do { (void)(expr); } while (0)
+
 #include <QGraphicsTextItem>
 #include <QGraphicsView>
 #include <QGraphicsScene>

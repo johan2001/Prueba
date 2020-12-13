@@ -18,16 +18,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     balas.cpp \
     campo.cpp \
-    canones.cpp \
-    main.cpp \
-    campo_de_batalla.cpp
+    canuto.cpp \
+    main.cpp
 
 HEADERS += \
     Librerias.h \
     balas.h \
     campo.h \
-    campo_de_batalla.h \
-    canones.h
+    canuto.h
 
 FORMS += \
     campo.ui \

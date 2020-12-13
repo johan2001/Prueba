@@ -1,11 +1,11 @@
-#include "campo_de_batalla.h"
+#include "campo.h"
 
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Campo_de_batalla w;
+    Campo w;
     w.show();
     return a.exec();
 }
