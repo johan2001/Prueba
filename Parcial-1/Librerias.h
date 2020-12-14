@@ -13,12 +13,17 @@
 #include <QObject>
 #include <QPixmap>
 #include <cstdlib>
-#include <ctime>
+#include <conio.h>
+#include <stdio.h>
+#include <math.h>
+#include <time.h>
 #include <QTimer>
 #include <QDebug>
+#include <ctime>
 #include <QList>
 #include <QFile>
 #include <QFont>
-#include <time.h>
+
+
 
 #endif // LIBRERIAS_H

@@ -28,8 +28,7 @@ HEADERS += \
     canuto.h
 
 FORMS += \
-    campo.ui \
-    campo_de_batalla.ui
+    campo.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

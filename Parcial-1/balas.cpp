@@ -1,15 +1,21 @@
 #include "balas.h"
 
 
-Balas::Balas(int x, int y, QObject *parent) : QObject(parent)
+Balas::Balas(float x, float y,float veliniX,float veliniY,float angulo,QString direccion, QObject *parent) : QObject(parent)
 {
     PosX = x;
     PosY = y;
+    Angulo = angulo;
+    VelX = veliniX;
+    VelY = veliniY;
+    Direccion = direccion;
     Radio =10;
     Ancho = 20;
     Alto = 20;
-    pixmap = new QPixmap("");// Guardar imagen en una variable
+    pixmap = new QPixmap(":/Imagenes/Bola.png");// Guardar imagen en una variable
 
+    timer_movimiento  = new QTimer();
+    connect(timer_movimiento, SIGNAL(timeout()), this, SLOT(Movimiento()));
 
     setPos(PosX,PosY); //Se ubica en la posciosn correspondiente el objeto
 }
@@ -29,4 +35,54 @@ void Balas::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWi
 Balas::~Balas()
 {
 
+}
+
+void Balas::Disparar()
+{
+    timer_movimiento->start(30);
+}
+
+void Balas::Detener()
+{
+    timer_movimiento->stop();
+}
+
+void Balas::Movimiento()
+{
+    if(Direccion=="Izquierda"){
+        PosX -= VelX;
+
+        if (VelY==0){
+            des = false;
+        }
+        if (des){
+            PosY -= VelY;
+            VelY -= 0.2;
+        }
+
+        else{
+            PosY += VelY;
+            VelY += 0.2;
+        }
+
+        setPos(PosX,PosY);
+    }
+    if(Direccion=="Derecha"){
+        PosX += VelX;
+
+        if (VelY==0){
+            des = false;
+        }
+        if (des){
+            PosY -= VelY;
+            VelY -= 0.2;
+        }
+
+        else{
+            PosY += VelY;
+            VelY += 0.2;
+        }
+
+        setPos(PosX,PosY);
+        }
 }
