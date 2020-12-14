@@ -26,8 +26,6 @@ public:
     void Disparar();
     void Detener();
 
-signals:
-
 public slots:
 
     void Movimiento();

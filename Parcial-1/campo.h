@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "Librerias.h"
 #include "balas.h"
+#include "canuto.h"
 
 namespace Ui {
 class Campo;
@@ -15,17 +16,14 @@ class Campo : public QMainWindow
 
 private:
     QGraphicsScene *scene;
-    QMap<int,bool> keys;
     Balas *balas1;
     Balas *balas2;
     Balas *balas3;
     Balas *balas4;
     Balas *balas5;
-
-    int mapa[15][38]=
-    {
-
-    };
+    Canuto *canuto1;
+    Canuto *canuto2;
+    QTimer *timer;
 
 public:
     explicit Campo(QWidget *parent = nullptr);
@@ -33,7 +31,7 @@ public:
     ~Campo();
 
 public slots:
-//    void colisiones();
+   void colisiones();
 
 
 private slots:

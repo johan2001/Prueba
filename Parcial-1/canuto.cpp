@@ -1,13 +1,19 @@
 #include "canuto.h"
 
-Canuto::Canuto(int x, int y, QObject *parent) : QObject(parent)
+Canuto::Canuto(int x, int y,QString direccion ,QObject *parent) : QObject(parent)
 {
     PosX = x;
     PosY = y;
-    Radio =10;
-    Ancho = 20;
-    Alto = 20;
-    pixmap = new QPixmap("");// Guardar imagen en una variable
+    Ancho = 70;
+    Alto = 60;
+    Direccion = direccion;
+    if (Direccion=="Izquierda"){
+        pixmap = new QPixmap(":/Imagenes/cannon-5287088_1280.png");// Guardar imagen en una variable
+    }
+    if (Direccion=="Derecha"){
+        pixmap = new QPixmap(":/Imagenes/cannon-5287088_12802.png");// Guardar imagen en una variable
+    }
+
 
 
     setPos(PosX,PosY); //Se ubica en la posciosn correspondiente el objeto

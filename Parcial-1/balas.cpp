@@ -14,7 +14,7 @@ Balas::Balas(float x, float y,float veliniX,float veliniY,float angulo,QString d
     Alto = 20;
     pixmap = new QPixmap(":/Imagenes/Bola.png");// Guardar imagen en una variable
 
-    timer_movimiento  = new QTimer();
+    timer_movimiento  = new QTimer(this);
     connect(timer_movimiento, SIGNAL(timeout()), this, SLOT(Movimiento()));
 
     setPos(PosX,PosY); //Se ubica en la posciosn correspondiente el objeto

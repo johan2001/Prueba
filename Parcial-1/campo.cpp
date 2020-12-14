@@ -14,9 +14,15 @@ Campo::Campo(QWidget *parent) :
     ui->graphicsView->setScene(scene);
     ui->graphicsView->setBackgroundBrush(QImage(":/Imagenes/Fondo.png").scaled(1200,600)); //Intoducir fondo
 
+    canuto1 = new Canuto(1100,230,"Derecha");
+    scene->addItem(canuto1);
 
+    canuto2 = new Canuto(100,330,"Izquierda");
+    scene->addItem(canuto2);
 
-
+    timer  = new QTimer(this);
+    connect(timer, SIGNAL(timeout()), this, SLOT(colisones()));
+    timer->start(0);
 }
 
 Campo::~Campo()
@@ -24,11 +30,16 @@ Campo::~Campo()
     delete ui;
 }
 
+void Campo::colisiones()
+{
+  qDebug("entro");
+}
+
 void Campo::on_pushButton_clicked()
 {
-    balas1 = new Balas(1100,250,11,8.5,50,"Izquierda");
+    balas1 = new Balas(1100,250,10,8.3,50,"Izquierda");
     scene->addItem(balas1);
-    balas2 = new Balas(1100,250,10,9,50,"Izquierda");
+    balas2 = new Balas(1100,250,9,10,50,"Izquierda");
     scene->addItem(balas2);
     balas3 = new Balas(1100,250,15,5,50,"Izquierda");
     scene->addItem(balas3);

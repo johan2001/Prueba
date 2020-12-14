@@ -117,6 +117,7 @@ compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_Imagenes.cpp
 release/qrc_Imagenes.cpp: ../Parcial-1/Imagenes.qrc \
 		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/rcc.exe \
+		../Parcial-1/Imagenes/cannon-5287088_12802.png \
 		../Parcial-1/Imagenes/Bola.png \
 		../Parcial-1/Imagenes/cannon-5287088_1280.png \
 		../Parcial-1/Imagenes/Fondo.png \
@@ -838,6 +839,9 @@ release/campo.o: ../Parcial-1/campo.cpp ../Parcial-1/campo.h \
 		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qmenu.h \
 		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qaction.h \
 		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qactiongroup.h \
+		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QPushButton \
+		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QStatusBar \
 		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qstatusbar.h \
 		C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QWidget
