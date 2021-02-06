@@ -45,10 +45,10 @@ public:
         graphicsView->setGeometry(QRect(0, -20, 1200, 600));
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(90, 0, 75, 23));
+        pushButton->setGeometry(QRect(10, 0, 75, 23));
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(10, 0, 75, 23));
+        pushButton_2->setGeometry(QRect(100, 0, 75, 23));
         pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
         pushButton_3->setGeometry(QRect(170, 0, 75, 23));
@@ -75,8 +75,8 @@ public:
     void retranslateUi(QMainWindow *Campo)
     {
         Campo->setWindowTitle(QCoreApplication::translate("Campo", "MainWindow", nullptr));
-        pushButton->setText(QCoreApplication::translate("Campo", "Caso 2", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Campo", "Caso 1", nullptr));
+        pushButton->setText(QCoreApplication::translate("Campo", "Caso 1", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("Campo", "Caso 2", nullptr));
         pushButton_3->setText(QCoreApplication::translate("Campo", "Caso 3", nullptr));
         pushButton_4->setText(QCoreApplication::translate("Campo", "Caso 4", nullptr));
         pushButton_5->setText(QCoreApplication::translate("Campo", "Caso 5", nullptr));

@@ -1,0 +1,10 @@
+debug/balas.o
+debug/balas_defensa.o
+debug/campo.o
+debug/canuto.o
+debug/main.o
+debug/qrc_Imagenes.o
+debug/moc_balas.o
+debug/moc_balas_defensa.o
+debug/moc_campo.o
+debug/moc_canuto.o

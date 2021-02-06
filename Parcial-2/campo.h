@@ -16,13 +16,12 @@ class Campo : public QMainWindow
 
 private:
     QGraphicsScene *scene;
-    Balas *balas1;
-    Balas *balas2;
-    Balas *balas3;
-    Balas *balas4;
-    Balas *balas5;
-    Canuto *canuto1;
-    Canuto *canuto2;
+    Balas *balasof;
+    Balas *balasdef;
+    Canuto *canutodefensivo;
+    Canuto *canutofensivo;
+    Canuto *Torre;
+    Canuto *Torre2;
     QTimer *timer;
 
 public:

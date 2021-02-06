@@ -10,8 +10,7 @@ class Canuto : public QObject, public QGraphicsItem
     Q_OBJECT
 
 private:
-    unsigned short Ancho,Alto;
-    int PosX , PosY;
+    int PosX , PosY, Ancho,Alto;
     QString Direccion;
     QPixmap *pixmap;
 public:
@@ -20,6 +19,13 @@ public:
     QRectF boundingRect() const;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
     ~ Canuto() ;
+    //Metodo Get
+    int get_Pos_X();
+    int get_Pos_Y();
+    int get_Ancho();
+    int get_Alto();
+
+    //Metodos Set
 };
 
 

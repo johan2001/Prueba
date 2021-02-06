@@ -1,0 +1,10 @@
+release/balas.o
+release/balas_defensa.o
+release/campo.o
+release/canuto.o
+release/main.o
+release/qrc_Imagenes.o
+release/moc_balas.o
+release/moc_balas_defensa.o
+release/moc_campo.o
+release/moc_canuto.o

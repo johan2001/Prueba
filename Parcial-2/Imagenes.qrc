@@ -1,9 +1,12 @@
 <RCC>
     <qresource prefix="/">
-        <file>Imagenes/Fondo.png</file>
         <file>Imagenes/cannon-5287088_1280.png</file>
         <file>Imagenes/images.jpg</file>
         <file>Imagenes/Bola.png</file>
         <file>Imagenes/cannon-5287088_12802.png</file>
+        <file>Imagenes/descarga.jpg</file>
+        <file>Imagenes/tower-40855_1280.png</file>
+        <file>Imagenes/Fondo.jpg</file>
+        <file>Imagenes/pngfind.com-circulo-png-69247.png</file>
     </qresource>
 </RCC>
